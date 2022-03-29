@@ -2,13 +2,14 @@
 <html xmlns:th="http://www.thymeleaf.org" th:fragment="inc_header" lang="ko" data-dark="true" class="fp-enabled"
     style="overflow: hidden; height: 100%;">
 <script type="text/javascript" charset="utf-8">
-  $(window).scroll(function () {
+$(function(){
+$(window).scroll(function () {
     if ($(window).scrollTop() > 100) {
         $("#downloads").addClass(".tr_left"); 
     } else {
         $("#downloads").removeClass(".tr_left");
-    }
-});
+    })};
+})
 </script>
 <script>
     Object.defineProperty(window, 'ysmm', {
