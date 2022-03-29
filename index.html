@@ -4,12 +4,9 @@
 <script type="text/javascript" charset="utf-8">
   $(window).scroll(function () {
     if ($(window).scrollTop() > 100) {
-        $("header").addClass("scrollheader"); 
-        $("label").addClass("scroll-berger");
-        //스크롤내리면 헤더 텍스트 전체적으로 작아짐
+        $("#downloads").addClass(".tr_left"); 
     } else {
-        $("header").removeClass("scrollheader");
-        $("label").removeClass("scroll-berger");
+        $("#downloads").removeClass(".tr_left");
     }
 });
 </script>
