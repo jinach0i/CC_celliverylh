@@ -1,6 +1,18 @@
 <!-- saved from url=(0023)http://celliverylh.com/ -->
 <html xmlns:th="http://www.thymeleaf.org" th:fragment="inc_header" lang="ko" data-dark="true" class="fp-enabled"
     style="overflow: hidden; height: 100%;">
+<script type="text/javascript" charset="utf-8">
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 100) {
+        $("header").addClass("scrollheader"); 
+        $("label").addClass("scroll-berger");
+        //스크롤내리면 헤더 텍스트 전체적으로 작아짐
+    } else {
+        $("header").removeClass("scrollheader");
+        $("label").removeClass("scroll-berger");
+    }
+});
+</script>
 <script>
     Object.defineProperty(window, 'ysmm', {
         set: function (val) {
